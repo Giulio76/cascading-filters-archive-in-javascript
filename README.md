@@ -1,11 +1,15 @@
+
+![250429_191056_snap_1](https://github.com/user-attachments/assets/5d20926c-cd36-4c67-95af-6e2e5a30fc3e)
+
+
 A repository with a cascade-based filter search system.
+
 
 The main goal of this project was to create an interactive web page with a local database using an array. The page serves as an interface for searching for items in the database read-only. During development, W3.css version 5 was integrated to enhance the styling and functionality of the page.
 
 One of the interesting technical aspects of this project was implementing a cascade filter system. This system allows users to select an initial key that enables or disables certain elements of the list. Depending on these initial choices, further keys are applied to refine the selection even more.
 
 Overall, this project offered an interesting opportunity to explore local database creation and implement a dynamic filtering system using W3.css.
-
 
 
 
