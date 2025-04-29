@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>cascading filters archive in javascript - mobile version</title>
+	<title>cascading filters archive in javascript ver 1.2 - mobile</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="author" content="Giulio76 - Github - @ 250428_171445">
+	<meta name="author" content="Giulio76 - Github - @ 250429_190422">
 	<meta name="description" content="A repository with a cascade-based filter search system.">
+	
 	
 	<script>/*W3.JS 1*/
 /* W3.JS 1.04 April 2019 by w3schools.com */
@@ -893,59 +894,75 @@ var glbstrViewMode = 'w3_flex';
 <!-- filtro con chiavi in cascata -->
 <!--  fase 1 della ricerca - indica le chiavi - caricano una matrice -->
 	
-<div class="w3-center w3-small">filtri in cascata</div>
+	<div class="w3-center w3-small">filtri in cascata</div>
 
-<div class="w3-small" style="margin-top: 0.5em; ">
-<button type="button" class="w3-button w3-round w3-light-grey 	w3-padding-small" onclick="fn_pag105_cerca_fase_1_aggiungi_chiavi('101','macro 1','1')">macro 1 &#9680;</button>
-<button type="button" class="w3-button w3-round w3-black 		w3-padding-small w3-right" onclick="fn_pag105_cerca_fase_1_aggiungi_chiavi('101','macro 1','0')">macro 1 &#9680;</button>
-</div>
-<div class="w3-small" style="margin-top: 0.5em; ">
-<button type="button" class="w3-button w3-round w3-light-grey 	w3-padding-small" onclick="fn_pag105_cerca_fase_1_aggiungi_chiavi('101','categoria 1','1')">categoria 1 &#9680;</button>
-<button type="button" class="w3-button w3-round w3-black 		w3-padding-small w3-right" onclick="fn_pag105_cerca_fase_1_aggiungi_chiavi('101','categoria 1','0')">categoria 1 &#9680;</button>
-</div>
-<div class="w3-small" style="margin-top: 0.5em; ">
-<button type="button" class="w3-button w3-round w3-light-grey 	w3-padding-small" onclick="fn_pag105_cerca_fase_1_aggiungi_chiavi('111','attributi 1 e 3','1')">attributi 1 e 3 &#9680;</button>
-<button type="button" class="w3-button w3-round w3-black 		w3-padding-small w3-right" onclick="fn_pag105_cerca_fase_1_aggiungi_chiavi('111','attributi 1 e 3','0')">attributi 1 e 3 &#9680;</button>
-</div>
-<div class="w3-small" style="margin-top: 0.5em; ">
-<button type="button" class="w3-button w3-round w3-light-grey w3-padding-small" onclick="fn_pag105_cerca_fase_1_aggiungi_chiavi('112','attributi 2 e 4','1')">attributi 2 e 4 &#9680;</button>
-<button type="button" class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="fn_pag105_cerca_fase_1_aggiungi_chiavi('111','attributi 2 e 4','0')">attributi 2 e 4 &#9680;</button>
-</div>
-<div class="w3-small" style="margin-top: 0.5em; ">
-<button type="button" class="w3-button w3-round w3-light-grey w3-padding-small" onclick="fn_pag105_cerca_fase_1_aggiungi_chiavi('113','attributi 7 e 8','1')">attributi 7 e 8 &#9680;</button>
-<button type="button" class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="fn_pag105_cerca_fase_1_aggiungi_chiavi('113','attributi 7 e 8','0')">attributi 7 e 8 &#9680;</button>
-</div>
-<div class="w3-small" style="margin-top: 0.5em; ">
-<button type="button" class="w3-button w3-round w3-light-grey w3-padding-small" onclick="fn_pag105_cerca_fase_1_aggiungi_chiavi('114','attributi 13 e 14','1')">attributi 13 e 14 &#9680;</button>
-<button type="button" class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="fn_pag105_cerca_fase_1_aggiungi_chiavi('114','attributi 13 e 14','0')">attributi 13 e 14 &#9680;</button>
-</div>
-<div class="w3-small" style="margin-top: 0.5em; ">
-<button type="button" class="w3-button w3-round w3-light-grey w3-padding-small" onclick="fn_pag105_cerca_fase_1_aggiungi_chiavi('115','attributo 17','1')">attributo 17 &#9680;</button>
-<button type="button" class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="fn_pag105_cerca_fase_1_aggiungi_chiavi('115','attributo 17','0')">attributo 17 &#9680;</button>
-</div>
-<div class="w3-small" style="margin-top: 0.5em; ">
-<button type="button" class="w3-button w3-round w3-light-grey w3-padding-small" onclick="fn_pag105_cerca_fase_1_aggiungi_chiavi('121','attributo 18','1')">attributo 18 &#9680;</button>
-<button type="button" class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="fn_pag105_cerca_fase_1_aggiungi_chiavi('121','attributo 18','0')">attributo 18 &#9680;</button>
-</div>
-<div class="w3-small" style="margin-top: 0.5em; ">
-<button type="button" class="w3-button w3-round w3-light-grey w3-padding-small" onclick="fn_pag105_cerca_fase_1_aggiungi_chiavi('122','attributo 19','1')">attributo 19 &#9680;</button>
-<button type="button" class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="fn_pag105_cerca_fase_1_aggiungi_chiavi('122','attributo 19','0')">attributo 19 &#9680;</button>
-</div>
-<div class="w3-small" style="margin-top: 0.5em; ">
-<button type="button" class="w3-button w3-round w3-light-grey w3-padding-small" onclick="fn_pag105_cerca_fase_1_aggiungi_chiavi('123','attributo 20','1')">attributo 20 &#9680;</button>
-<button type="button" class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="fn_pag105_cerca_fase_1_aggiungi_chiavi('123','attributo 20','0')">attributo 20 &#9680;</button>
-</div>
+			<div id="" class="" style="height: 15vh; overflow:auto;">
+				<div id="ctn_pag105_pan_chiavi_101_macro_1" class="w3-center" style="margin-bottom: 0.5em;  "> 							<!-- chiave  id    nome      +-  label -->
+					<button type="button" class="w3-button w3-round w3-light-grey w3-padding-small" onclick="fn_pag105_cerca_fase_1_aggiungi_chiavi('101','macro_1','1','macro 1')">macro 1 &#9680;</button> ||
+					<button type="button" class="w3-button w3-round w3-black w3-padding-small" 		onclick="fn_pag105_cerca_fase_1_aggiungi_chiavi('101','macro_1','0','macro 1')">macro 1 &#9681;</button><br>
+				</div>
+				<div id="ctn_pag105_pan_chiavi_102_categoria_1" class="w3-center" style="margin-bottom: 0.5em;  ">
+					<button type="button" class="w3-button w3-round w3-light-grey w3-padding-small" onclick="fn_pag105_cerca_fase_1_aggiungi_chiavi('102','categoria_1','1','categoria 1')">categoria 1 &#9680;</button> ||
+					<button type="button" class="w3-button w3-round w3-black w3-padding-small" 		onclick="fn_pag105_cerca_fase_1_aggiungi_chiavi('102','categoria_1','0','categoria 1')">categoria 1 &#9681;</button><br>
+				</div>
+			</div>
 
+
+				<div id="ctn_pag105_pan_chiavi_111_attributi_1_e_3" class="w3-center" style="margin-bottom: 0.5em;  "> 					<!-- chiave  id    nome      +-  label -->
+					<button type="button" class="w3-button w3-round w3-light-grey w3-padding-small" onclick="fn_pag105_cerca_fase_1_aggiungi_chiavi('111','attributi_1_e_3','1','attributi 1 e 3')">attributi 1 e 3 &#9680;</button> ||
+					<button type="button" class="w3-button w3-round w3-black w3-padding-small" 		onclick="fn_pag105_cerca_fase_1_aggiungi_chiavi('111','attributi_1_e_3','0','attributi 1 e 3')">attributi 1 e 3 &#9681;</button><br>
+				</div>
+				<div id="ctn_pag105_pan_chiavi_112_attributi_2_e_4" class="w3-center" style="margin-bottom: 0.5em;  ">
+					<button type="button" class="w3-button w3-round w3-light-grey w3-padding-small" onclick="fn_pag105_cerca_fase_1_aggiungi_chiavi('112','attributi_2_e_4','1','attributi 2 e 4')">attributi 2 e 4 &#9680;</button> ||
+					<button type="button" class="w3-button w3-round w3-black w3-padding-small" 		onclick="fn_pag105_cerca_fase_1_aggiungi_chiavi('111','attributi_2_e_4','0','attributi 2 e 4')">attributi 2 e 4 &#9681;</button><br>
+				</div>
+
+				<div id="ctn_pag105_pan_chiavi_113_attributi_7_e_8" class="w3-center" style="margin-bottom: 0.5em;  ">
+					<button type="button" class="w3-button w3-round w3-light-grey w3-padding-small" onclick="fn_pag105_cerca_fase_1_aggiungi_chiavi('113','attributi_7_e_8','1','attributi 7 e 8')">attributi 7 e 8 &#9680;</button> ||
+					<button type="button" class="w3-button w3-round w3-black w3-padding-small" 		onclick="fn_pag105_cerca_fase_1_aggiungi_chiavi('113','attributi_7_e_8','0','attributi 7 e 8')">attributi 7 e 8 &#9681;</button><br>
+				</div>
+				<div id="ctn_pag105_pan_chiavi_114_attributi_13_e_14" class="w3-center" style="margin-bottom: 0.5em;  ">
+					<button type="button" class="w3-button w3-round w3-light-grey w3-padding-small" onclick="fn_pag105_cerca_fase_1_aggiungi_chiavi('114','attributi_13_e_14','1','attributi 13 e 14')">attributi 13 e 14 &#9680;</button> ||
+					<button type="button" class="w3-button w3-round w3-black w3-padding-small" 		onclick="fn_pag105_cerca_fase_1_aggiungi_chiavi('114','attributi_13_e_14','0','attributi 13 e 14')">attributi 13 e 14 &#9681;</button><br>
+				</div>
+				<div id="ctn_pag105_pan_chiavi_115_attributo_17" class="w3-center" style="margin-bottom: 0.5em;  ">
+					<button type="button" class="w3-button w3-round w3-light-grey w3-padding-small" onclick="fn_pag105_cerca_fase_1_aggiungi_chiavi('115','attributo_17','1','attributo 17')">attributo 17 &#9680;</button> ||
+					<button type="button" class="w3-button w3-round w3-black w3-padding-small" 		onclick="fn_pag105_cerca_fase_1_aggiungi_chiavi('115','attributo_17','0','attributo 17')">attributo 17 &#9681;</button><br>
+				</div>
+
+
+				<div id="ctn_pag105_pan_chiavi_121_attributo_18" class="w3-center" style="margin-bottom: 0.5em;  ">
+					<button type="button" class="w3-button w3-round w3-light-grey w3-padding-small" onclick="fn_pag105_cerca_fase_1_aggiungi_chiavi('121','attributo_18','1','attributo 18')">attributo 18 &#9680;</button> ||
+					<button type="button" class="w3-button w3-round w3-black w3-padding-small" 		onclick="fn_pag105_cerca_fase_1_aggiungi_chiavi('121','attributo_18','0','attributo 18')">attributo 18 &#9681;</button><br>
+				</div>
+				<div id="ctn_pag105_pan_chiavi_122_attributo_19" class="w3-center" style="margin-bottom: 0.5em;  ">
+					<button type="button" class="w3-button w3-round w3-light-grey w3-padding-small" onclick="fn_pag105_cerca_fase_1_aggiungi_chiavi('122','attributo_19','1','attributo 19')">attributo 19 &#9680;</button> ||
+					<button type="button" class="w3-button w3-round w3-black w3-padding-small" 		onclick="fn_pag105_cerca_fase_1_aggiungi_chiavi('122','attributo_19','0','attributo 19')">attributo 19 &#9681;</button><br>
+				</div>
+				<div id="ctn_pag105_pan_chiavi_123_attributo_20" class="w3-center" style="margin-bottom: 0.5em;  ">
+					<button type="button" class="w3-button w3-round w3-light-grey w3-padding-small" onclick="fn_pag105_cerca_fase_1_aggiungi_chiavi('123','attributo_20','1','attributo 20')">attributo 20 &#9680;</button> ||
+					<button type="button" class="w3-button w3-round w3-black w3-padding-small" 		onclick="fn_pag105_cerca_fase_1_aggiungi_chiavi('123','attributo_20','0','attributo 20')">attributo 20 &#9681;</button><br>
+				</div>
 
 
 <!--  barra delle chaivi -->			
-<div id="ctn_pag_105_barra_filtro_esponi_chiavi_in_sequenza" class="w3-flex w3-blue-grey" style="flex-direction:row; gap:2px; flex-wrap:wrap; margin:0px;padding:0px; padding: 0.5em; ">tutto</div>	
+<div id="ctn_pag_105_barra_filtro_esponi_chiavi_in_sequenza" class="w3-flex w3-blue-grey" style="flex-direction:row; gap:2px; flex-wrap:wrap; margin:0px;padding:0px; padding: 0.5em; ">Ricerca su tutto l'archivio</div>
+</div>
 
 <script> // aggiungi chiave
 const mtxPag105Cerca = [];
 
-function fn_pag105_cerca_fase_1_aggiungi_chiavi(strIncA, strIncB, strIncC) {
-	mtxPag105Cerca.push([strIncA, strIncB, strIncC]); 
+function fn_pag105_cerca_fase_1_aggiungi_chiavi(strIncA, strIncB, strIncC, strIncD ) {
+							// ('101','weapon','1', 'le weapons')
+	mtxPag105Cerca.push([strIncA, strIncB, strIncC, strIncD ]); 
+
+	// vado a cercare l'ultimo elemento
+	let intP = mtxPag105Cerca.length - 1;
+
+	//nasconde la chiave nel pannello sopra
+	//uso i parametri per individuare il contenitore da nascondere ('101','weapon','1')                        // trasporo in minuscolo per la compatibilita tra gli id e le label	
+	document.getElementById('ctn_pag105_pan_chiavi_' + mtxPag105Cerca[intP][0] + '_' + mtxPag105Cerca[intP][1].toLowerCase() ).style.display = 'none'; 
+	
 	//refresh
 	fn_pag105_cerca_fase_1_leggi_matrice_chiavi();
 }	
@@ -959,28 +976,26 @@ function fn_pag105_cerca_fase_1_leggi_matrice_chiavi() {
 	// crea i pulsanti sulla barra
 	//mostrare le chivi - ulsante con in più l'icona cancella x
 	let strA = '';
-		strA += 'tutto ';
+		strA += '<div id="" class="w3-padding" style="">Da tutto l\'archivio</div>';
 		
 	
 	
 	for (let i = 0; i < mtxPag105Cerca.length; i++) {
 	
 		let strClass = 'w3-black';
-		let strB = '&#9680;';	
-	
-		strA += ' -';
+		let strB = '&#9681;';	
 	
 		if ( mtxPag105Cerca[i][2] == '1' ) {strClass = "w3-light-grey"; strB = '&#9680;'; }
 
-			strA += '<div id="" class="w3-small" style="margin:0px;padding:0px; ">'+
+		let strF = 'poi togli tutti i non ';
+		if ( mtxPag105Cerca[i][2] == '1' ) {strF = 'poi lascia solo i '; }
+
+			strA += '<div id="" class="w3-padding-small" style="">'+ strF + ' ' +
 						'<button type="button" class="w3-button w3-round ' + 
-							strClass +' w3-padding-small" ' + ' style="margin:0px;padding:0px; " ' +
-								' onclick="fn_pag105_creca_fase_1_togli_chiave(' + i +')">' + 
-								mtxPag105Cerca[i][1]  + ' ' + strB + ' ' + '&#10060;' + '</button></div>' ;
+							strClass +' w3-padding-small" onclick="fn_pag105_creca_fase_1_togli_chiave(' + i +')">' + 
+								mtxPag105Cerca[i][3]  + ' ' + strB + ' ' + '&#10060;' + '</button> ; </div>' ;
 		
 		strA += '\n';
-		
-		
 	}   
 
 
@@ -1012,12 +1027,21 @@ function fn_pag105_cerca_fase_1_leggi_matrice_chiavi() {
 
 				//cerca	// [ "101", "weapon", "1" ] e tutti wuelli cha hanno la ricerca tipo 101 che cercano nella colonna 2
 				if ( mtxPag105Cerca[k][0] == '101' ) { // se tipo 101 stai cercando nella colonna delle macrocategorie [1]
-					if ( mtxArchivio[j][1] == mtxPag105Cerca[k][1] ) {
+					if ( mtxArchivio[j][1] == mtxPag105Cerca[k][3] ) {
 						mtxArchivio[j][8] = strD;
 					}else {
 						mtxArchivio[j][8] = strE;
 					}					
 				}
+
+				if ( mtxPag105Cerca[k][0] == '102' ) { // se tipo 101 stai cercando nella colonna delle macrocategorie [1]
+					if ( mtxArchivio[j][2] == mtxPag105Cerca[k][3] ) {
+						mtxArchivio[j][8] = strD;
+					}else {
+						mtxArchivio[j][8] = strE;
+					}					
+				}
+
 
 				//cerca	// '111','ATTACCO','1' - due colonne - 9 e 11
 				if ( mtxPag105Cerca[k][0] == '111' ) { 
@@ -1109,14 +1133,17 @@ function fn_pag105_cerca_fase_1_leggi_matrice_chiavi() {
 
 <script>
 function fn_pag105_creca_fase_1_togli_chiave(intIncA) {
- 
-	//	intIncA è un numero che indica la riga della matrice chiavi
+//	intIncA è un numero che indica la riga della matrice chiavi
 
-	// ok console.log(  intIncA   + ' - ' + mtxPag105Cerca[intIncA]  );
+	//nasconde la chiave nel pannello sopra
+	//uso i parametri per individuare il contenitore da nascondere ('101','weapon','1')
+	document.getElementById('ctn_pag105_pan_chiavi_' + mtxPag105Cerca[intIncA][0] + '_' + mtxPag105Cerca[intIncA][1].toLowerCase() ).style.display = 'block'; 
+
 
 	//togli l'elemento indicato dalla mtrice	
 	//matrice.splice(1, 1);
 	mtxPag105Cerca.splice(intIncA, 1);
+	
 
 	//console.log( mtxPag105Cerca.length  );
 	//reset se va a 0
@@ -1124,7 +1151,7 @@ function fn_pag105_creca_fase_1_togli_chiave(intIncA) {
 	if ( mtxPag105Cerca.length == 0 ) {
 		for (let j = 0; j < mtxArchivio.length; j++) { mtxArchivio[j][8] = '1' ; }
 		fn_hidden_pag105_cerca_fase_3_elenca('');	
-		document.getElementById('ctn_pag_105_barra_filtro_esponi_chiavi_in_sequenza').innerHTML = 'tutto'; 		
+		document.getElementById('ctn_pag_105_barra_filtro_esponi_chiavi_in_sequenza').innerHTML = 'Ricerca su tutto l\'archivio'; 
 	} else {
 		//refresh
 		fn_pag105_cerca_fase_1_leggi_matrice_chiavi();
@@ -1306,21 +1333,48 @@ function fn_pag105_creca_fase_1_togli_chiave(intIncA) {
 function fn_dettaglio_show(intIncA) {
 
 	// intIncA è un numero che indica la riga della matrice archivio dell'elemento selezionato
-
-	if (intIncA != null ) {
-	
 		
 		glbIntElementoArchivioSelezionato = intIncA;
 
 		//ok console.log( intIncA ); // 0 numero
 		
 		let strA = '';
-			//strA += '' + mtxArchivio[] ;
-			
-			for (let i = 0; i < mtxArchivio[intIncA].length; i++) {
-				strA += '' + mtxArchivio[intIncA][i] + '<br>\n' ;
-			} 
+		
+strA += mtxArchivio[intIncA][7] + '<br>\n<div id="" class="w3-tiny w3-text-orange " style="margin-bottom: 0.5em; "><i>nome</i></div>' ;
+strA += '<img src="' + mtxArchivio[intIncA][6] +'" style= "height: 4em;">' + '<br>\n<div id="" class="w3-tiny w3-text-orange " style="margin-bottom: 0.5em; "><i>image</i></div>' ;
+strA += mtxArchivio[intIncA][4] + '<br>\n<div id="" class="w3-tiny w3-text-orange " style="margin-bottom: 0.5em; "><i>codice</i></div>' ;
+strA +='<hr>';
+strA += mtxArchivio[intIncA][21] + '<br>\n<div id="" class="w3-tiny w3-text-orange " style="margin-bottom: 0.5em; "><i>descrizione breve 1</i></div>' ;
+strA += mtxArchivio[intIncA][22] + '<br>\n<div id="" class="w3-tiny w3-text-orange " style="margin-bottom: 0.5em; "><i>descrizione breve 2</i></div>' ;
+strA += mtxArchivio[intIncA][23] + '<br>\n<div id="" class="w3-tiny w3-text-orange " style="margin-bottom: 0.5em; "><i>descrizione breve 3</i></div>' ;
+strA += mtxArchivio[intIncA][24] + '<br>\n<div id="" class="w3-tiny w3-text-orange " style="margin-bottom: 0.5em; "><i>descrizione breve 4</i></div>' ;
+strA +='<hr>';
+strA += mtxArchivio[intIncA][0] + '<br>\n<div id="" class="w3-tiny w3-text-orange " style="margin-bottom: 0.5em; "><i>n</i></div>' ;
+strA += mtxArchivio[intIncA][1] + '<br>\n<div id="" class="w3-tiny w3-text-orange " style="margin-bottom: 0.5em; "><i>macro gruppo</i></div>' ;
+strA += mtxArchivio[intIncA][2] + '<br>\n<div id="" class="w3-tiny w3-text-orange " style="margin-bottom: 0.5em; "><i>categoria</i></div>' ;
+strA += mtxArchivio[intIncA][3] + '<br>\n<div id="" class="w3-tiny w3-text-orange " style="margin-bottom: 0.5em; "><i>sotto categoria</i></div>' ;
+strA += mtxArchivio[intIncA][5] + '<br>\n<div id="" class="w3-tiny w3-text-orange " style="margin-bottom: 0.5em; "><i>att</i></div>' ;
+strA +='<hr>';
+strA += mtxArchivio[intIncA][8] + '<br>\n<div id="" class="w3-tiny w3-text-orange " style="margin-bottom: 0.5em; "><i>enable</i></div>' ;
+strA += mtxArchivio[intIncA][9] + '<br>\n<div id="" class="w3-tiny w3-text-orange " style="margin-bottom: 0.5em; "><i>attributo 1</i></div>' ;
+strA += mtxArchivio[intIncA][10] + '<br>\n<div id="" class="w3-tiny w3-text-orange " style="margin-bottom: 0.5em; "><i>attributo 2</i></div>' ;
+strA += mtxArchivio[intIncA][11] + '<br>\n<div id="" class="w3-tiny w3-text-orange " style="margin-bottom: 0.5em; "><i>attributo3</i></div>' ;
+strA += mtxArchivio[intIncA][12] + '<br>\n<div id="" class="w3-tiny w3-text-orange " style="margin-bottom: 0.5em; "><i>attributo 4</i></div>' ;
+strA += mtxArchivio[intIncA][13] + '<br>\n<div id="" class="w3-tiny w3-text-orange " style="margin-bottom: 0.5em; "><i>attributo 5</i></div>' ;
+strA += mtxArchivio[intIncA][14] + '<br>\n<div id="" class="w3-tiny w3-text-orange " style="margin-bottom: 0.5em; "><i>attributo 6</i></div>' ;
+strA += mtxArchivio[intIncA][15] + '<br>\n<div id="" class="w3-tiny w3-text-orange " style="margin-bottom: 0.5em; "><i>attributo 7</i></div>' ;
+strA += mtxArchivio[intIncA][16] + '<br>\n<div id="" class="w3-tiny w3-text-orange " style="margin-bottom: 0.5em; "><i>attributo 8</i></div>' ;
+strA += mtxArchivio[intIncA][17] + '<br>\n<div id="" class="w3-tiny w3-text-orange " style="margin-bottom: 0.5em; "><i>attributo 9</i></div>' ;
+strA += mtxArchivio[intIncA][18] + '<br>\n<div id="" class="w3-tiny w3-text-orange " style="margin-bottom: 0.5em; "><i>attributo 10</i></div>' ;
+strA += mtxArchivio[intIncA][19] + '<br>\n<div id="" class="w3-tiny w3-text-orange " style="margin-bottom: 0.5em; "><i>attributo 11</i></div>' ;
+strA += mtxArchivio[intIncA][20] + '<br>\n<div id="" class="w3-tiny w3-text-orange " style="margin-bottom: 0.5em; "><i>attributo 12</i></div>' ;
 
+
+		// modaletto show
+		document.getElementById('ctn_modaletto_1_dettaglio').style.display='block';
+		
+		document.getElementById('ctn_modaletto_1_dettaglio_centrale').innerHTML = strA; 
+		
 		
 		//evidanzia elemento selezionato
 			//reset di tutti quelli mostrati
@@ -1335,13 +1389,8 @@ function fn_dettaglio_show(intIncA) {
 			
 			
 		
-		// modaletto show
-		document.getElementById('ctn_modaletto_1_dettaglio').style.display='block';
-		document.getElementById('ctn_modaletto_1_dettaglio_centrale').innerHTML = strA; 
 		
 
-		
-	}
 }
 </script>
 	
